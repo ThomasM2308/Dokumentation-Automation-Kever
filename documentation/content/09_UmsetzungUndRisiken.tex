@@ -1,0 +1,38 @@
+\section{Umsetzung und Risiken}
+
+\subsection{Planung der Umsetzung}
+Für die praktische Einführung des intelligenten Fehlersupports im industriellen Umfeld wird der strukturierte \textbf{PDCA-Zyklus} angewendet, um Ziele messbar zu erreichen und fortlaufend zu lernen:
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt]
+    \item \textbf{Plan (Planung):} Definition zentraler Ziele wie der spürbaren Reduktion von Stillstandszeiten und Entlastung der Instandhaltung. Festlegung messbarer Kennzahlen (z.\,B. Reparaturzeit-Reduktion um 30\,\%).
+    \item \textbf{Do (Umsetzung):} Schrittweise Implementierung einer Testanlage. Beschaffung eines passenden Computers mit GPU, Programmierung der SPS-Schnittstelle für den Ringspeicher sowie Entwicklung der Python-Schnittstelle zur Kommunikation mit der KI.
+    \item \textbf{Check (Überprüfung):} Mehrwöchiger Test im Schichtbetrieb. Abgleich der Ist-Werte mit historischen Stillstandszeiten, Überprüfung des Zeitersparnisses (Ziel: ca. 10 Min./Störung) und Einhaltung des Budgets von ca. 40 Arbeitsstunden.
+    \item \textbf{Act (Standardisierung):} Nach erfolgreicher Testphase erfolgt die Übernahme in die RAFI-Richtlinien. Künftige Neuanlagen werden direkt ab Werk ausgestattet, Bestandsanlagen schrittweise nachgerüstet.
+\end{itemize}
+
+\subsection{Stakeholder und Abhängigkeiten der Umsetzung}
+Für eine erfolgreiche Umsetzung müssen verschiedene Stakeholder eng zusammenarbeiten. 
+Die Beteiligten und der Ablauf hängen dabei direkt voneinander ab, da einzelne Phasen zwingend aufeinander aufbauen.
+Deshalb ist das Projekt nur zielführend wenn versvchiedene Akteure koordiniert zusammenarbeiten. 
+Dieses Kapitel beschäftigt sich mit dieser Koordination. 
+
+Der Prozess startet im \textbf{Einkauf}, der für die Beschaffung der erforderlichen Hardware, also des Computers und der GPU, zuständig ist. 
+Zum Identifizieren von geeigneten Bauteilen wird ein Elektroingenuer der Automatisierungsabteilung zur Verfügung gestellt. 
+
+Erst wenn die Hardware vorliegt, können die \textbf{Programmierer und die Softwareentwicklung} mit der praktischen Arbeit beginnen.
+Sie richten die Schnittstellen in der SPS ein, programmieren den Ringpuffer und binden die Python-Schnittstelle zur KI-Cloud an. 
+Die Programmierung und Validierung auf der Testanlage ist wiederum die Voraussetzung für die nächste Phase.
+
+Nach erfolgreicher technischer Umsetzung erfolgt die Übergabe an die \textbf{Produktion und das Instandhaltungspersonal}. 
+Dieser Schritt umfasst eine gründliche Einweisung der Mitarbeiter vor Ort, damit diese die KI-gestützten Rückmeldungen auf 
+dem HMI-Display im Arbeitsalltag richtig deuten und nutzen können. Das Feedback der Werker dient abschließend dazu,
+das System feinzujustieren und den dauerhaften Betrieb sicherzustellen. Das ist auch im Sinne des des kontinuierlichen Verbesserungsprozesses KVP.
+
+\subsection{Einzugehende Risiken}
+
+\subsubsection*{Finanzielles Risiko der Investition}
+Das finanzielle Risiko ist durch eine geringe Anfangsinvestition von rund 4.500\,€ minimal und vollkommen überschaubar. Selbst bei geringerer Zeitersparnis (z.\,B. 3--4 statt 10 Minuten) verlängert sich lediglich die Amortisationszeit von rund zwei auf fünf bis sechs Monate. Da die laufenden Betriebskosten bei ca. 3\,Cent pro Störung liegen und keine teuren Wartungsverträge anfallen, entstehen keine unkontrollierbaren Folgekosten. Der angeschaffte Computer mit GPU ist zudem flexibel anderweitig nutzbar.
+
+\subsubsection*{Risiko der Datensicherheit im Umgang mit künstlichen Intelligenzen}
+Um den Schutz von Firmengeheimnissen zu gewährleisten, werden ausschließlich technische Messwerte (Ströme, Temperaturen, Fehlernummern) übermittelt. Sensible Produktionsdaten, Rezepturen oder Mitarbeiterdaten verbleiben im Unternehmen. Zusätzlich reglementiert ein strenger System-Prompt das KI-Modell, sodass dieses thematisch fokussiert bleibt.
+

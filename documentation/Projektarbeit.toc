@@ -1,0 +1,24 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Ausgangszustand}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Problemdefinition}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Zielsetzung}{2}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Technische Lösung}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Technisches Lösungskonzept}{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Kontinuierliche Erfassung im Normalbetrieb}{4}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Fehlerausgelöste Analysephase}{5}{subsubsection.2.1.2}%
+\contentsline {section}{\numberline {3}Wirtschaftliche Gesamtbetrachtung und Rentabilität}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Rahmenbedingungen und Annahmen}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Laufende Betriebskosten}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Erwartete Ersparnisse}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Investitionsaufwand}{8}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Amortisation}{8}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Fazit}{9}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Umsetzung und Risiken}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Planung der Umsetzung}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Stakeholder und Abhängigkeiten der Umsetzung}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Einzugehende Risiken}{11}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Zusammenfassung und Entscheidungsvorlage}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Entscheidungsfrage}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Konkrete Entscheidungsvorlage für das Management}{12}{subsection.5.2}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
