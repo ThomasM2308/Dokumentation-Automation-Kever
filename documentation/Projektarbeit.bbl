@@ -16,5 +16,126 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global/global}
+    \entry{lab_part1}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=f606873d652903108352629f35a2e23c}{%
+           family={Kever},
+           familyi={K\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {DHBW Ravensburg, Campus Friedrichshafen}%
+      }
+      \strng{namehash}{f606873d652903108352629f35a2e23c}
+      \strng{fullhash}{f606873d652903108352629f35a2e23c}
+      \strng{fullhashraw}{f606873d652903108352629f35a2e23c}
+      \strng{bibnamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authorbibnamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authornamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authorfullhash}{f606873d652903108352629f35a2e23c}
+      \strng{authorfullhashraw}{f606873d652903108352629f35a2e23c}
+      \field{extraname}{1}
+      \field{labelalpha}{Kev26}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Industrial Bus Systems -- Laboratory Part \#1 (HW set-up \& Interfaces)}
+      \field{year}{2026}
+    \endentry
+    \entry{lab_part2}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=f606873d652903108352629f35a2e23c}{%
+           family={Kever},
+           familyi={K\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {DHBW Ravensburg, Campus Friedrichshafen}%
+      }
+      \strng{namehash}{f606873d652903108352629f35a2e23c}
+      \strng{fullhash}{f606873d652903108352629f35a2e23c}
+      \strng{fullhashraw}{f606873d652903108352629f35a2e23c}
+      \strng{bibnamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authorbibnamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authornamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authorfullhash}{f606873d652903108352629f35a2e23c}
+      \strng{authorfullhashraw}{f606873d652903108352629f35a2e23c}
+      \field{extraname}{2}
+      \field{labelalpha}{Kev26}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Industrial Bus Systems -- Laboratory Part \#2 (PLC programming)}
+      \field{year}{2026}
+    \endentry
+    \entry{lab_part3}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=f606873d652903108352629f35a2e23c}{%
+           family={Kever},
+           familyi={K\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {DHBW Ravensburg, Campus Friedrichshafen}%
+      }
+      \strng{namehash}{f606873d652903108352629f35a2e23c}
+      \strng{fullhash}{f606873d652903108352629f35a2e23c}
+      \strng{fullhashraw}{f606873d652903108352629f35a2e23c}
+      \strng{bibnamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authorbibnamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authornamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authorfullhash}{f606873d652903108352629f35a2e23c}
+      \strng{authorfullhashraw}{f606873d652903108352629f35a2e23c}
+      \field{extraname}{3}
+      \field{labelalpha}{Kev26}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Industrial Bus Systems -- Laboratory Part \#3 (Motor control)}
+      \field{year}{2026}
+    \endentry
+    \entry{aufgabe_tea24}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=f606873d652903108352629f35a2e23c}{%
+           family={Kever},
+           familyi={K\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {DHBW Ravensburg, Campus Friedrichshafen}%
+      }
+      \strng{namehash}{f606873d652903108352629f35a2e23c}
+      \strng{fullhash}{f606873d652903108352629f35a2e23c}
+      \strng{fullhashraw}{f606873d652903108352629f35a2e23c}
+      \strng{bibnamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authorbibnamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authornamehash}{f606873d652903108352629f35a2e23c}
+      \strng{authorfullhash}{f606873d652903108352629f35a2e23c}
+      \strng{authorfullhashraw}{f606873d652903108352629f35a2e23c}
+      \field{extraname}{4}
+      \field{labelalpha}{Kev26}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extraalpha}{4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Industrielle Bussysteme -- Aufgabenstellung Hausarbeit TEA24}
+      \field{year}{2026}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

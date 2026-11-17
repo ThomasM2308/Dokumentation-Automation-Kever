@@ -1,1 +1,13 @@
 \section{Fazit und Ausblick}
+Mit der umgesetzten Lösung wird die Temperatur des PT100-Sensors zuverlässig erfasst und über den Schrittmotor mit Zeiger auf der Skala angezeigt. 
+Dabei werden mehrere Anbindungsarten an einer S7-1500 zusammengeführt: der PT100 als analoges Signal, der optische Sensor O8T über IO-Link, der Leuchttaster AC2398 über AS-i und der Schrittmotor direkt über Digitalausgänge. 
+Der Baustein \texttt{TempDisplay\_Ctrl} ist als Zustandsautomat aufgebaut und sorgt für einen klaren und nachvollziehbaren Ablauf. Nach dem Start wird automatisch referenziert, danach wird die Anzeige selbstständig nachgeführt und Fehler führen sicher zum Stillstand des Motors.
+
+Die größte Herausforderung war es, mit nur zwei Tastern und zwei LEDs ein verständliches Bedienkonzept umzusetzen. 
+Durch die Unterscheidung zwischen dem Halten eines einzelnen Tasters und dem gleichzeitigen Halten beider Taster sowie durch verschiedene Blinkfrequenzen der LEDs konnten alle nötigen Funktionen abgebildet werden. 
+Bei der Inbetriebnahme zeigte sich außerdem, dass vor allem die Referenzfahrt und die Drehrichtung des Motors sorgfältig getestet werden müssen, damit Zeigerstellung und Skala übereinstimmen.
+
+Für eine Weiterentwicklung bieten sich mehrere Punkte an. 
+Der eingestellte Offset könnte remanent gespeichert werden, damit er nach einem Neustart der SPS erhalten bleibt. 
+Über ein HMI könnten Parameter wie die Hysterese oder die Geschwindigkeit der Korrekturfahrt ohne Programmänderung angepasst und Fehlerursachen im Klartext angezeigt werden. 
+Zudem könnten die Diagnosedaten von IO-Link und AS-i genutzt werden, um Sensor- oder Verbindungsfehler gezielter zu erkennen.

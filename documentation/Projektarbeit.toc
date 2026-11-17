@@ -2,15 +2,16 @@
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Aufgabenstellung und Ziel}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Ausgangslage}{1}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Systemaufbau}{2}{section.2}%
-\contentsline {section}{\numberline {3}Programmkonzept}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Ablaufsteuerung}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Positionierfahrt}{6}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Korrekturfahrt}{7}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Belegung der Taster}{8}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Bedeutung der LEDs}{8}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Bedienungsanleitung}{10}{section.4}%
-\contentsline {section}{\numberline {5}Umsetzung im TIA Portal}{11}{section.5}%
-\contentsline {section}{\numberline {6}Test und Inbetriebnahme}{12}{section.6}%
-\contentsline {section}{\numberline {7}Fazit und Ausblick}{13}{section.7}%
+\contentsline {section}{\numberline {2}Systemaufbau}{3}{section.2}%
+\contentsline {section}{\numberline {3}Programmkonzept}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Programmstruktur}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Ablaufsteuerung}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Positionierfahrt}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Korrekturfahrt}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Belegung der Taster}{10}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Bedeutung der LEDs}{10}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Signalliste}{11}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Bedienungsanleitung}{13}{section.4}%
+\contentsline {section}{\numberline {5}Fazit und Ausblick}{14}{section.5}%
+\contentsline {section}{\nonumberline Literatur}{II}{section*.1}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

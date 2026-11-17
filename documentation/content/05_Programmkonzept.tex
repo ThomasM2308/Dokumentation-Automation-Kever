@@ -1,6 +1,15 @@
 \section{Programmkonzept}
 \label{sec:programmkonzept}
 
+\subsection{Programmstruktur}
+Das Programm besteht aus wenigen Bausteinen, die im \texttt{OB1} nacheinander aufgerufen werden:
+\begin{enumerate}[itemsep=0pt, topsep=2pt]
+    \item Der FC \texttt{PT100\_conversion} rechnet die Spannung am Analogeingang in eine Temperatur in \textdegree C um und prüft, ob der Messwert gültig ist.
+    \item Der FB \texttt{TempDisplay\_Ctrl} mit eigenem Instanz-Datenbaustein enthält die komplette Steuerung. Er bekommt die Temperatur, die Taster und die Taktmerker und setzt die LEDs.
+    \item Innerhalb von \texttt{TempDisplay\_Ctrl} wird der vorgegebene \texttt{Motor\_CTRL\_FB} als Multiinstanz aufgerufen. Er steuert den Schrittmotor und wertet den optischen Sensor für die Referenzfahrt aus.
+\end{enumerate}
+Der rote Taster ist ein Öffner. Sein Signal wird vor dem Aufruf umgedreht, damit am Baustein beide Taster gleich arbeiten (TRUE = gedrückt).
+
 \subsection{Ablaufsteuerung}
 Das ganze Programm für die Temperaturanzeige steckt in einem Funktionsbaustein, dem \texttt{TempDisplay\_Ctrl}. 
 Er ist als Zustandsautomat aufgebaut: Das Programm befindet sich immer in genau einem Zustand und wechselt bei bestimmten Bedingungen in einen anderen. 
@@ -163,3 +172,6 @@ Während der Korrektur leuchtet die LED des Tasters, der gerade gedrückt ist.
 
 % Belegung der Taster und Bedeutung der LEDs
 \input{content/09_Bedienkonzept.tex}
+
+% Signalliste
+\input{content/07_Signalliste.tex}

@@ -1,3 +1,36 @@
-\section{Signalliste}
-% Tabelle: Name, Datentyp, Ort (PLC-Tag/E/A, Merker, DB), Adresse, Beschreibung
-% getrennt nach Eingängen, Ausgängen, internen Variablen und Schnittstellen zum \texttt{Motor\_CTRL\_FB}
+\subsection{Signalliste}
+\label{sec:signalliste}
+Die folgende Tabelle zeigt die wichtigsten Signale und wo sie angelegt sind. 
+Ein- und Ausgänge der Hardware sind als PLC-Tags angelegt, alle internen Werte liegen im Instanz-Datenbaustein von \texttt{TempDisplay\_Ctrl}.
+
+\begin{table}[H]
+\centering\footnotesize
+\begin{tabular}{|L{3.4cm}|L{1.3cm}|L{3.9cm}|L{5.4cm}|}
+\hline
+\textbf{Signal} & \textbf{Typ} & \textbf{Ort} & \textbf{Beschreibung} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Eingänge (PLC-Tags)}} \\ \hline
+Taster grün & Bool & AS-i, Eingangsbyte 193 & Schließer, TRUE = gedrückt \\ \hline
+Taster rot & Bool & AS-i, Eingangsbyte 193 & Öffner, wird vor dem FB invertiert \\ \hline
+PT100 Rohwert & Int & Analogeingang AI0 & Spannung 0--10\,V = 0--100\,\textdegree C \\ \hline
+O8T202 Schaltsignal & Bool & IO-Link Port 2 (AL1100) & Zeiger in Referenzposition, ausgewertet im \texttt{Motor\_CTRL\_FB} \\ \hline
+Taktmerker 1\,Hz / 2\,Hz & Bool & Merker (Taktmerkerbyte der CPU) & Takt für Nachführung und LED-Blinken \\ \hline
+\multicolumn{4}{|l|}{\textbf{Ausgänge (PLC-Tags)}} \\ \hline
+LED grün / LED rot & Bool & AS-i, Ausgangsbyte 192 & Leuchtmittel im AC2398 \\ \hline
+Motor Takt / Richtung & Bool & Digitalausgänge (PTO) & Ansteuerung des Schrittmotortreibers durch den \texttt{Motor\_CTRL\_FB} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Schnittstelle FB \texttt{TempDisplay\_Ctrl} (Instanz-DB)}} \\ \hline
+\texttt{i\_temp\_celsius} & Real & Input & Temperatur in \textdegree C aus \texttt{PT100\_conversion} \\ \hline
+\texttt{i\_temp\_valid} & Bool & Input & Messwert gültig \\ \hline
+\texttt{i\_btn\_green}, \texttt{i\_btn\_red} & Bool & Input & Taster, TRUE = gedrückt \\ \hline
+\texttt{i\_clock\_1hz}, \texttt{i\_clock\_2hz} & Bool & Input & Taktmerker \\ \hline
+\texttt{o\_led\_green}, \texttt{o\_led\_red} & Bool & Output & Ansteuerung der LEDs \\ \hline
+\texttt{o\_state} & Int & Output & aktueller Zustand (Diagnose) \\ \hline
+\texttt{o\_error} & Bool & Output & Fehlerzustand aktiv \\ \hline
+\texttt{o\_out\_of\_range} & Bool & Output & Temperatur außerhalb 0--36\,\textdegree C \\ \hline
+\texttt{o\_target\_angle}, \texttt{o\_offset} & Real & Output & Zielwinkel und Offset in \textdegree \\ \hline
+\texttt{stat\_state} & Int & Static & Zustand des Automaten \\ \hline
+\texttt{stat\_offset} & Real & Static & gespeicherter Korrekturwert \\ \hline
+\texttt{stat\_motor} & FB & Static & Multiinstanz \texttt{Motor\_CTRL\_FB} \\ \hline
+\texttt{HYST\_ANGLE}, \texttt{OFFSET\_LIMIT} & Real & Konstante & Hysterese und Grenze für den Offset \\ \hline
+\end{tabular}
+\caption{Signalliste}
+\end{table}
