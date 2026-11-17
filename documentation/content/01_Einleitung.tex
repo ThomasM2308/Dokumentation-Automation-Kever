@@ -1,22 +1,22 @@
 \section{Einleitung}
-    In der industriellen Fertigung setzt die RAFI Gruppe auf hochautomatisierte Produktionsanlagen, um Produkte personalunabhängig, in gleichbleibend hoher Qualität und unter maximaler Wirtschaftlichkeit herzustellen. Als Steuerungsbasis kommen vor allem Industrie-PCs des Herstellers Beckhoff in den Produktionsanlagen zum Einsatz.
 
+\subsection{Aufgabenstellung und Ziel}
+Ziel dieser Arbeit ist die Konfiguration und Verknüpfung mehrerer Peripheriegeräte an einer Siemens S7-1500 Steuerung zu einer Temperaturanzeige. 
+Die Temperatur wird mit einem PT100-Sensor erfasst und der SPS kontinuierlich als analoger Spannungswert zur Verfügung gestellt. Die SPS berechnet daraus den genauen Temperaturwert in Grad Celsius. 
+Angezeigt wird der Messwert über einen Schrittmotor mit Anzeigepfeil auf einer Skala von 0 bis 360. 
+Die Anzeige erfolgt in 1/10\,\textdegree C-Schritten, sodass beispielsweise eine Temperatur von 25\,\textdegree C als Wert 250 auf der Skala dargestellt wird. 
+Zusätzlich wird der Leuchttaster AC2398 eingebunden: Über seine beiden Taster kann der Bediener die Temperaturanzeige steuern, über die beiden LEDs werden ihm Zustands- und Fehlerinformationen signalisiert.
 
-\subsection{Ausgangszustand} 
+Neben der Implementierung im TIA Portal V21 umfasst die Aufgabe die Erstellung eines Konzeptes. 
+Messung, Skalierung und Motoransteuerung sind durch die Aufgabenstellung und das Startprojekt bereits weitgehend vorgegeben. 
+Frei gestaltet werden kann vor allem, wie der Bediener die Anzeige über die beiden Taster beeinflusst und welche Informationen ihm über die beiden LEDs angezeigt werden. 
+Dazu gehören eine Ablaufsteuerung mit Fehlerbehandlung sowie eine kompakte Bedienungsanleitung. 
+Diese Dokumentation dient der Erläuterung dieses Bedien- und Anzeigekonzepts, während die Details der Umsetzung über die Kommentare im TIA-Projekt beschrieben sind.
 
-    Kommt es zu einem Anlagenfehler, wird die Produktion unterbrochen, bis das Instandhaltungspersonal die Anlage wieder in einen funktionsfähigen Zustand versetzt hat. Da während dieser Stillstandszeit keine Produkte gefertigt werden können, entstehen erhebliche Opportunitätskosten. Um diese Ausfallzeiten so gering wie möglich zu halten, ist im Fehlerfall eine schnelle und zielgerichtete Ursacheneingrenzung entscheidend. Durch eine rasche Wiederaufnahme der Produktion profitiert RAFI von minimalen Stillstandszeiten und einer effizienteren Arbeitsweise des Wartungspersonals. Bislang ist das Personal bei der Störungsbehebung jedoch auf sich allein gestellt und muss ohne vorgefertigte Hilfsmittel arbeiten, was den Prozess kompliziert und untranstransparent macht und ein zielstrebiges Vorgehen erschwert. Genau an dieser Herausforderung setzt das genannte Problem an:
-    
-    
-
-\subsection{Problemdefinition}
-
-    Die Instandsetzung der Anlage ist nicht nur sehr zeitintensiv, sondern dadurch auch mit hohen Kosten verbunden. Der Hauptgrund für die langen Ausfallzeiten liegt darin, dass das Wartungspersonal bisher keine strukturierten Informationen zum Zustand der Anlage vor einem Anlagenfehler erhält. Man kann also keine Fehlerursache ableiten. Die einsehbaren Variablen und Programmzustände sind unübersichtlich, wodurch die Auswertung komplex, zeitaufwendig und fehleranfällig wird. Konkret fehlen dem Personal wichtige Daten zu aktiven Anlagenzuständen oder zuletzt ausgeführten Programmschritten, die den Prozess des Fehler behebens erheblich beschleunigen würden.
-
-    Darüber hinaus fehlt ebenfalls die Überwachung externer Einflüsse. So kann beispielsweise ein kurzzeitiger Druckverlust die Anlage in den Fehlerzustand versetzt haben. Kehrt der Druck kurz darauf wieder zurück, ist es für das Personal im Nachhinein unmöglich, diese flüchtige Fehlerursache zu lokalisieren. In der Folge müssen Vermutungen über fehlerquellen angestellt werden, die eine zielgerichtete und effiziente Fehlerbehebung verhindern.
-
-
-
-
-\subsection{Zielsetzung}
-    
-    Abhilfe soll ein KI-gestütztes, intelligentes Fehlersupportsystem leisten, das das Instandhaltungspersonal optimal unterstützt. Tritt ein Fehler auf, analysiert das KI-System vollautomatisch die letzten Zustände und Signale der Anlage sowie weitere Informationen zum Programmablauf, um den Defekt präzise einzugrenzen. Eine Eingrenzung des Fehlers nund eine Handlungsempfehlung wird für der Werker auf dem HMI-Bildschirm aufgezeigt. Auf diese Weise wird das Wartungsteam effektiv entlastet, wodurch der Zeitaufwand für die Instandhaltung deutlich reduziert und gleichzeitig die Anlagenverfügbarkeit erhöht wird.
+\subsection{Ausgangslage}
+Als Ausgangspunkt dient das bereitgestellte Startprojekt \texttt{TEA24\_IndusBusSys\_Task\_Start\_Project.zap21}. 
+In diesem sind der Schrittmotor (angesteuert über einen PWM-Ausgang) sowie der optische Sensor O8T (angebunden über IO-Link) bereits an der SPS projektiert. 
+Für beide Geräte sind Datenbausteine angelegt. 
+Zur Ansteuerung des Motors steht der Funktionsbaustein \texttt{Motor\_CTRL\_FB} zur Verfügung, mit dem gezielt Positionen angefahren und über den optischen Sensor eine Referenzfahrt auf die Nullposition durchgeführt werden kann. 
+Ergänzt werden müssen der PT100-Sensor, der über einen Messumformer am Analogeingang der SPS angeschlossen ist, sowie der Leuchttaster AC2398. 
+Darüber hinaus können Programmteile aus den vorangegangenen Laborübungen wiederverwendet werden, sofern sie in das Konzept passen.

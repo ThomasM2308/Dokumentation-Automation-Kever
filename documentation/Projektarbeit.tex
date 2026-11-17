@@ -1,3 +1,5 @@
+% !TEX program = pdflatex
+% !BIB program = biber
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %BESCHREIBUNG
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -41,7 +43,7 @@
 
 \usepackage[backend=biber,style=alphabetic]{biblatex}
 
-\addbibresource{content/literature.bib}
+\addbibresource{literature.bib}
 
 \usepackage[T1]{fontenc}
 % ToDo Notes ---------------------------------------------------------------------------------------------------
@@ -79,6 +81,12 @@
 % Quellcodelistings --------------------------------------------------------------------------------------------
 \usepackage{listings}
 \usepackage{wrapfig}
+% Tabellen: linksbündige Spalten mit L{Breite} --------------------------------------------------------------
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+% Flowcharts ---------------------------------------------------------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc}
 \usepackage{textcomp}
 \usepackage{textgreek}
 
@@ -86,23 +94,23 @@
 %META INFORMATIONEN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Projektspezifische Informationen -----------------------------------------------------------------------------
-\newcommand{\titel}{Nutzung von Künstlichen Intelligenzen zur Realisierung eines Intelligenten Fehlersupports}
-\newcommand{\arbeit}{Prüfungsabgabe im Fach Automatisierung}
+\newcommand{\titel}{Erweiterung eines Siemens TIA-Programms um eine Temperaturanzeige}
+\newcommand{\arbeit}{Prüfungsabgabe im Fach Industrielle Automationssysteme}
 \newcommand{\studiengang}{Elektro- und Informationstechnik,\\Automation}
 \newcommand{\hochschule}{DHBW Ravensburg}
 \newcommand{\campus}{Campus Friedrichshafen}
-\newcommand{\autor}{Thomas Martin}
-\newcommand{\abgabe}{18.12.2026}
-\newcommand{\zeitraum}{30.09.2026 - 18.12.2026}
-\newcommand{\matrikelnummer}{2566504}
-\newcommand{\unternehmen}{RAFI GmbH \& Co. KG}
+\newcommand{\autor}{Thomas Martin, Melvin Zeuner, Florian Germann}
+\newcommand{\abgabe}{04.12.2026}
+\newcommand{\zeitraum}{10.11.2026 - 04.12.2026}
+\newcommand{\matrikelnummer}{2566504, 5516079, 7582635}
+\newcommand{\unternehmen}{DHBW Ravensburg \& Campus Friedrichshafen}
 \newcommand{\unternehmenstr}{Ravensburger Str. 128-134}
 \newcommand{\unternehmenaddr}{88276 Berg}
 \newcommand{\betreuereins}{}
 \newcommand{\betreuerzwei}{}
 \newcommand{\betreuerdrei}{}
 %\newcommand{\gutachter}{Prof. Dr. Gutachter}
-\newcommand{\ort}{Berg}
+\newcommand{\ort}{Friedrichshafen}
 % Information für PDF Generierung ------------------------------------------------------------------------------
 \hypersetup{
 	pdftitle = {\titel},
@@ -117,7 +125,7 @@
 \pagestyle{scrheadings}
 \clearpairofpagestyles
 \ihead{\includegraphics[height = 1.25 cm]{logos/logo_dhbw.png}}
-\ohead{\includegraphics[height = 0.65 cm]{logos/logo_rafi.png}}
+%\ohead{} % RAFI-Logo entfernt
 \ofoot{\pagemark}
 %Anpassen der KOMA Überschriften -------------------------------------------------------------------------------
 \addtokomafont{sectioning}{\rmfamily}
@@ -243,14 +251,20 @@
     \pagenumbering{arabic}
     \input{content/01_Einleitung.tex}
     \newpage
-    \input{content/05_TechnischeLoesung.tex}
+    \input{content/03_Systemaufbau.tex}
     \newpage
-    \input{content/07_VergleichAusgangszustand.tex}
+    \input{content/05_Programmkonzept.tex}
     \newpage
-    \input{content/09_UmsetzungUndRisiken.tex}
+    \input{content/10_Bedienungsanleitung.tex}
     \newpage
-    \input{content/099_FazitUndEntscheidungsvorlage.tex}
+    \input{content/11_UmsetzungInTIA.tex}
     \newpage
+    \input{content/13_Test.tex}
+    \newpage
+    \input{content/15_Fazit.tex}
+    \newpage
+    %\input{content/099_FazitUndEntscheidungsvorlage.tex}
+    %\newpage
     %Abbildungsverzeichnis -----------------------------------------------------------------------------------------
     \pagenumbering{Roman}
     %\setcounter{page}{\value{savepage}+1}

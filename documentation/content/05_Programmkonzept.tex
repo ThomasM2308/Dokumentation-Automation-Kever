@@ -1,0 +1,165 @@
+\section{Programmkonzept}
+\label{sec:programmkonzept}
+
+\subsection{Ablaufsteuerung}
+Das ganze Programm für die Temperaturanzeige steckt in einem Funktionsbaustein, dem \texttt{TempDisplay\_Ctrl}. 
+Er ist als Zustandsautomat aufgebaut: Das Programm befindet sich immer in genau einem Zustand und wechselt bei bestimmten Bedingungen in einen anderen. 
+Der Baustein wird in jedem SPS-Zyklus aufgerufen und arbeitet dabei immer dieselben Schritte ab:
+Zuerst werden die Taster eingelesen und die Zeiten aktualisiert. Dann wird aus der Temperatur berechnet, wohin der Zeiger zeigen soll. 
+Anschließend wird geprüft, ob ein Zustandswechsel nötig ist, der aktuelle Zustand wird bearbeitet, der Motorbaustein \texttt{Motor\_CTRL\_FB} wird aufgerufen und zum Schluss werden die LEDs gesetzt.
+
+Es gibt sechs Zustände:
+\begin{itemize}[itemsep=0pt, topsep=2pt]
+    \item \textbf{INIT:} Start nach dem Einschalten oder nach einem Neustart. Eine laufende Bewegung wird gestoppt und alle Werte werden zurückgesetzt. Danach geht es direkt in die Referenzfahrt.
+    \item \textbf{REF:} Referenzfahrt. Der Zeiger dreht sich, bis der optische Sensor ihn in der Nullposition erkennt.
+    \item \textbf{DISPLAY:} Normalbetrieb. Der Motor steht und die Temperatur wird überwacht.
+    \item \textbf{MOVE:} Der Zeiger fährt auf den neuen Temperaturwert.
+    \item \textbf{JOG:} Der Bediener verstellt den Zeiger von Hand mit den Tastern.
+    \item \textbf{ERROR:} Es ist ein Fehler aufgetreten. Der Motor wird sofort gestoppt und die rote LED blinkt.
+\end{itemize}
+
+Wohin der Zeiger zeigen soll, ergibt sich aus
+\[
+\varphi_{\mathrm{Ziel}} = 10 \cdot T + \text{Offset}
+\]
+Der Wert wird auf \mbox{0 bis 359{,}9\textdegree{}} begrenzt. Bei 25\,\textdegree C zeigt der Zeiger also auf 250. 
+Der Offset ist die Korrektur, die der Bediener von Hand eingestellt hat (siehe Kapitel~\ref{sec:korrekturfahrt}). 
+Die Zahlen auf der Skala werden gegen den Uhrzeigersinn größer. Ein größerer Wert bedeutet deshalb eine Drehung gegen den Uhrzeigersinn.
+Abbildung~\ref{fig:programmablauf} zeigt den Ablauf.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    every node/.style={font=\footnotesize},
+    proc/.style={rectangle, draw, rounded corners=2pt, minimum width=4.6cm, minimum height=0.75cm, align=center, fill=blue!6, inner sep=2pt},
+    dec/.style={diamond, draw, aspect=3.4, inner sep=0pt, align=center, fill=orange!10},
+    term/.style={rectangle, draw, rounded corners=0.35cm, minimum width=3.4cm, minimum height=0.6cm, align=center, fill=gray!15},
+    side/.style={rectangle, draw, rounded corners=2pt, minimum width=3.3cm, minimum height=0.75cm, align=center, inner sep=2pt},
+    arr/.style={-{Stealth[length=1.8mm]}, thick},
+    lbl/.style={font=\scriptsize, fill=white, inner sep=1pt}
+]
+% ---------------- Hauptspalte ----------------
+\coordinate (R) at (3.5,0);   % rechte Rückweg-Spur
+\coordinate (L) at (-3.75,0);  % linke Rückweg-Spur
+\node[term] (start) at (0,0) {SPS-Start / Neustart};
+\node[proc, below=0.7cm of start] (init)  {\textbf{INIT}: Motor stoppen, Variablen zurücksetzen\\beide LEDs blinken mit 2\,Hz};
+\node[proc, below=0.7cm of init]  (ref)   {\textbf{REF}: Referenzfahrt zur Nullposition\\beide LEDs blinken mit 2\,Hz};
+\node[dec,  below=0.7cm of ref]   (refok) {Referenz\\gefunden?};
+\node[proc, below=0.8cm of refok] (disp)  {\textbf{DISPLAY}: Motor steht, Anzeige aktiv\\grüne LED blinkt mit 1\,Hz};
+\node[dec,  below=0.7cm of disp]  (valid) {Temperaturwert\\gültig?};
+\node[dec,  below=0.8cm of valid] (jogreq){grün oder rot\\> 300\,ms gedrückt?};
+\node[dec,  below=0.8cm of jogreq](upd)   {1-s-Takt oder\\Zwangsupdate?};
+\node[dec,  below=0.8cm of upd]   (delta) {$|\Delta \varphi| \ge \text{HYST}$?};
+\node[proc, below=0.8cm of delta] (move)  {\textbf{MOVE}: Positionierfahrt auf Zielwinkel\\grüne LED blinkt mit 1\,Hz};
+% ---------------- Seitenspalten ----------------
+\node[side, fill=blue!6] (jog)   at (jogreq -| -6.0,0) {\textbf{JOG}: Korrekturfahrt\\solange Taster gedrückt\\LED des Tasters leuchtet};
+\node[side, fill=red!10] (error) at (valid -| 5.7,0)   {\textbf{ERROR}: Motor gestoppt\\rote LED blinkt mit 1\,Hz};
+
+% ---------------- Hauptablauf ----------------
+\draw[arr] (start) -- (init);
+\draw[arr] (init) -- (ref);
+\draw[arr] (ref) -- (refok);
+\draw[arr] (refok) -- node[lbl, right=2pt] {ja} (disp);
+\draw[arr] (disp) -- (valid);
+\draw[arr] (valid) -- node[lbl, right=2pt] {ja} (jogreq);
+\draw[arr] (jogreq) -- node[lbl, right=2pt] {nein} (upd);
+\draw[arr] (upd) -- node[lbl, right=2pt] {ja} (delta);
+\draw[arr] (delta) -- node[lbl, right=2pt] {ja} (move);
+
+% ---------------- Fehlerpfade (rechts) ----------------
+\draw[arr] (refok.east) -| node[lbl, pos=0.35, above] {nein / Timeout 30\,s} (error.north);
+\draw[arr] (valid.east) -- node[lbl, above, pos=0.2] {nein} (error.west);
+\draw[arr, dashed] (move.east) -| node[lbl, pos=0.45, below] {Motorfehler, Abbruch, Timeout} (error.south);
+\draw[arr, dashed] (error.east) -- ++(0.4,0) |- node[lbl, pos=0.75, above] {beide Taster 3\,s} (init.east);
+
+% ---------------- Rückwege zu DISPLAY (rechts) ----------------
+\draw[thick] (upd.east) -- (upd.east -| R);
+\draw[thick] (delta.east) -- (delta.east -| R);
+\draw[arr] (delta.east -| R) -- node[lbl, right, pos=0.3] {nein} ([yshift=-1.5mm]disp.east -| R) -- ([yshift=-1.5mm]disp.east);
+
+% ---------------- Rückwege zu DISPLAY (links) ----------------
+\draw[arr] (jogreq.west) -- node[lbl, above, pos=0.15] {ja} (jog.east);
+\draw[arr] (jog.north) |- node[lbl, pos=0.75, above] {Taster losgelassen} ([yshift=1.5mm]disp.west);
+\draw[arr] (move.west) -- (move.west -| L) -- node[lbl, left, pos=0.08] {Position erreicht} ([yshift=-1.5mm]disp.west -| L) -- ([yshift=-1.5mm]disp.west);
+\end{tikzpicture}
+\caption{Programmablauf des Zustandsautomaten \texttt{TempDisplay\_Ctrl}}
+\label{fig:programmablauf}
+\end{figure}
+
+Zwei Dinge gelten in jedem Zustand:
+Werden beide Taster 3\,s gleichzeitig gehalten, startet das Programm neu. Fehler und Offset werden gelöscht, und es geht wieder bei \texttt{INIT} los, also mit einer neuen Referenzfahrt. 
+Meldet der Motorbaustein einen Fehler, wechselt das Programm sofort in den Zustand \texttt{ERROR}.
+Außerdem prüft das Programm im Normalbetrieb, ob die Nullposition noch bekannt ist. Ist sie verloren gegangen, wird automatisch eine neue Referenzfahrt gestartet.
+Bei jedem Fehler bleibt der Motor stehen und die rote LED blinkt.
+
+\subsection{Positionierfahrt}
+Im Normalbetrieb wird der Zeiger einmal pro Sekunde an die aktuelle Temperatur angepasst. Direkt nach einer Referenzfahrt passiert das sofort, ohne auf die nächste Sekunde zu warten. 
+Dazu berechnet das Programm, wie weit der Zeiger vom richtigen Wert entfernt ist:
+\[
+\Delta \varphi = \varphi_{\mathrm{Ziel}} - \varphi_{\mathrm{Ist}}
+\]
+
+Der Zeiger fährt nur los, wenn diese Abweichung mindestens so groß ist wie ein fest eingestellter Mindestwert (Hysterese \texttt{HYST\_ANGLE}). 
+So fährt der Motor nicht bei jeder winzigen Schwankung der Temperatur hin und her.
+
+Für die Fahrt bekommt der Motorbaustein den Winkel, um den er sich drehen soll. Die Drehrichtung ergibt sich daraus, ob die Temperatur gestiegen oder gefallen ist. 
+Dann wird der Motor gestartet, und das Programm wartet im Zustand \texttt{MOVE}, bis der Motor meldet, dass er angekommen ist. Danach geht es zurück in den Normalbetrieb. 
+Dauert die Fahrt zu lange oder wird sie abgebrochen, wechselt das Programm in den Fehlerzustand (Abbildung~\ref{fig:positionierfahrt}).
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=0.58cm,
+    every node/.style={font=\small},
+    proc/.style={rectangle, draw, rounded corners=2pt, minimum width=5.5cm, minimum height=0.8cm, align=center, fill=blue!6},
+    dec/.style={diamond, draw, aspect=2.5, inner sep=1.2pt, align=center, fill=orange!10},
+    term/.style={rectangle, draw, rounded corners=0.35cm, minimum width=3.9cm, minimum height=0.75cm, align=center, fill=gray!15},
+    arr/.style={-{Stealth[length=2mm]}, thick},
+    lbl/.style={font=\footnotesize}
+]
+\node[term] (s) {DISPLAY: 1-s-Takt\\oder Zwangsupdate};
+\node[proc, below=of s] (d) {Abweichung berechnen\\$\Delta \varphi = \varphi_{\text{Ziel}} - \varphi_{\text{Ist}}$};
+\node[dec, below=of d] (h) {$|\Delta \varphi| \ge \text{HYST\_ANGLE}$?};
+\node[proc, below=0.75cm of h] (p) {diskreter Modus\\Winkel $|\Delta \varphi|$, Richtung aus Vorzeichen};
+\node[proc, below=of p] (st) {\textbf{MOVE}: Startimpuls an \texttt{Motor\_CTRL\_FB}};
+\node[dec, below=of st] (run) {Motor läuft\\(\texttt{done = 0})?};
+\node[dec, below=0.75cm of run] (done) {Position erreicht\\(\texttt{done = 1})?};
+\node[term, below=0.75cm of done] (e) {zurück zu DISPLAY};
+\node[rectangle, draw, rounded corners=2pt, minimum width=2.6cm, minimum height=0.75cm, align=center, fill=red!10, left=1.4cm of done] (err) {\textbf{ERROR}\\rote LED blinkt};
+
+\draw[arr] (s) -- (d);
+\draw[arr] (d) -- (h);
+\draw[arr] (h) -- node[lbl, right] {ja} (p);
+\draw[arr] (p) -- (st);
+\draw[arr] (st) -- (run);
+\draw[arr] (run) -- node[lbl, right] {ja} (done);
+\draw[arr] (done) -- node[lbl, right] {ja} (e);
+\draw[arr] (done.west) -- node[lbl, above] {Abbruch} (err.east);
+
+\draw[arr] (h.east) -- ++(2.2,0) |- node[lbl, right, pos=0.25] {nein} (e.east);
+\draw[arr] (run.east) -- ++(0.9,0) |- node[lbl, right, pos=0.25] {nein} ($(st.south)!0.5!(run.north)$);
+\draw[arr] (done.east) -- ++(0.9,0) |- node[lbl, right, pos=0.25] {nein} ($(run.south)!0.5!(done.north)$);
+\end{tikzpicture}
+\caption{Ablauf einer automatischen Positionierfahrt}
+\label{fig:positionierfahrt}
+\end{figure}
+
+\subsection{Korrekturfahrt}
+\label{sec:korrekturfahrt}
+Mit der Korrekturfahrt kann der Bediener den Zeiger von Hand verstellen, zum Beispiel wenn die Anzeige nicht ganz stimmt.
+Dazu muss er den grünen oder roten Taster länger als 300\,ms gedrückt halten. Ein kurzes oder versehentliches Antippen löst also nichts aus.
+
+Solange der grüne Taster gehalten wird, fährt der Zeiger zu größeren Werten. Solange der rote Taster gehalten wird, fährt er zu kleineren Werten. 
+Am Anfang und am Ende der Skala bleibt der Zeiger automatisch stehen.
+
+Lässt der Bediener den Taster los, wartet das Programm, bis der Motor steht. Dann wird gespeichert, wie weit der Zeiger jetzt vom berechneten Wert abweicht:
+\[
+\text{Offset} = \varphi_{\mathrm{Ist}} - 10 \cdot T
+\]
+Dieser Offset ist nach oben und unten begrenzt (\texttt{OFFSET\_LIMIT}) und wird nur gespeichert, wenn die Temperatur im Anzeigebereich liegt. 
+Ab jetzt wird der Offset bei jeder Anzeige mitgerechnet. Der Zeiger wird danach sofort neu positioniert.
+
+Während der Korrektur leuchtet die LED des Tasters, der gerade gedrückt ist.
+
+% Belegung der Taster und Bedeutung der LEDs
+\input{content/09_Bedienkonzept.tex}

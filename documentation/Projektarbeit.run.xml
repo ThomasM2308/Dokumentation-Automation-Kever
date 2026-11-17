@@ -80,7 +80,7 @@
       <file>Projektarbeit.bcf</file>
     </requires>
     <requires type="editable">
-      <file>content/literature.bib</file>
+      <file>literature.bib</file>
     </requires>
   </external>
 </requests>

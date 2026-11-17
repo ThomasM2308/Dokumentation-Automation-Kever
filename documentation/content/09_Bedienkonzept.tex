@@ -1,0 +1,37 @@
+% Wird aus 05_Programmkonzept.tex eingebunden
+\subsection{Belegung der Taster}
+\label{sec:bedienkonzept}
+Zur Bedienung gibt es nur die zwei Taster des AC2398. 
+Damit kann der Bediener den Zeiger korrigieren und das Programm nach einem Fehler neu starten. 
+Der rote Taster ist ein Öffner, sein Signal wird deshalb vor dem Baustein umgedreht.
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{|L{3.6cm}|L{10.4cm}|}
+\hline
+\textbf{Bedienung} & \textbf{Funktion} \\ \hline
+Grün länger als 300\,ms halten & Zeiger fährt nach oben (positiver Offset), bis der Taster losgelassen oder das Skalenende erreicht wird. Grüne LED leuchtet. \\ \hline
+Rot länger als 300\,ms halten & Zeiger fährt nach unten (negativer Offset), bis der Taster losgelassen oder das Skalenende erreicht wird. Rote LED leuchtet. \\ \hline
+Beide Taster 3\,s halten & Neustart mit Referenzfahrt: Offset wird gelöscht, der Zeiger fährt auf 0 und anschließend auf die aktuelle Temperatur. Beide LEDs blinken mit 2\,Hz, solange die Referenzfahrt läuft. Ein anliegender Fehler wird dabei quittiert. \\ \hline
+\end{tabular}
+\caption{Belegung der Taster des AC2398}
+\end{table}
+
+\subsection{Bedeutung der LEDs}
+Die LEDs zeigen über schnelles oder langsames Blinken an, was das Programm gerade macht. 
+Wird ein Taster gedrückt, leuchtet seine LED dauerhaft. Das gilt nicht während des Starts, der Referenzfahrt und im Fehlerzustand.
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{|L{2.6cm}|L{2.6cm}|L{8.8cm}|}
+\hline
+\textbf{LED grün} & \textbf{LED rot} & \textbf{Bedeutung} \\ \hline
+blinkt 2\,Hz & blinkt 2\,Hz & Referenzfahrt läuft \\ \hline
+blinkt 1\,Hz & aus & Normalbetrieb, Anzeige aktuell \\ \hline
+blinkt 1\,Hz & blinkt 1\,Hz & Temperatur außerhalb 0--36\,\textdegree C, Zeiger am Skalenende \\ \hline
+aus & blinkt 1\,Hz & Fehler, Motor gestoppt \\ \hline
+\end{tabular}
+\caption{Bedeutung der LED-Zustände}
+\end{table}
+
+Eine kompakte Anleitung für den Bediener findet sich in Kapitel~\ref{sec:bedienungsanleitung}.

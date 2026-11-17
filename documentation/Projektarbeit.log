@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.30)  22 OCT 2026 15:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.30)  17 NOV 2026 16:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/h0109030/Documents/GitHub/T3000-Dokumentation/documentation/Projektarbeit.tex
-(c:/Users/h0109030/Documents/GitHub/T3000-Dokumentation/documentation/Projektarbeit.tex
+**c:/Users/h0109030/Documents/GitHub/Automation-Kever/documentation/Projektarbeit.tex
+(c:/Users/h0109030/Documents/GitHub/Automation-Kever/documentation/Projektarbeit.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrartcl.cls
@@ -740,6 +740,206 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
 \WF@box=\box62
 \WF@everypar=\toks30
 Package: wrapfig 2003/01/31  v 3.6
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen182
+\ar@mcellbox=\box63
+\extrarowheight=\dimen183
+\NC@list=\toks31
+\extratabsurround=\skip95
+\backup@length=\skip96
+\ar@cellbox=\box64
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen184
+\pgfutil@tempdimb=\dimen185
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box65
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen186
+\pgf@y=\dimen187
+\pgf@xa=\dimen188
+\pgf@ya=\dimen189
+\pgf@xb=\dimen190
+\pgf@yb=\dimen191
+\pgf@xc=\dimen192
+\pgf@yc=\dimen193
+\pgf@xd=\dimen194
+\pgf@yd=\dimen195
+\w@pgf@writea=\write4
+\r@pgf@reada=\read4
+\c@pgf@counta=\count463
+\c@pgf@countb=\count464
+\c@pgf@countc=\count465
+\c@pgf@countd=\count466
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count467
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count468
+\pgfsyssoftpath@bigbuffer@items=\count469
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen196
+\pgfmath@count=\count470
+\pgfmath@box=\box66
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count471
+)) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen197
+\pgf@picmaxx=\dimen198
+\pgf@picminy=\dimen199
+\pgf@picmaxy=\dimen256
+\pgf@pathminx=\dimen257
+\pgf@pathmaxx=\dimen258
+\pgf@pathminy=\dimen259
+\pgf@pathmaxy=\dimen260
+\pgf@xx=\dimen261
+\pgf@xy=\dimen262
+\pgf@yx=\dimen263
+\pgf@yy=\dimen264
+\pgf@zx=\dimen265
+\pgf@zy=\dimen266
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen267
+\pgf@path@lasty=\dimen268
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen269
+\pgf@shorten@start@additional=\dimen270
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box67
+\pgf@hbox=\box68
+\pgf@layerbox@main=\box69
+\pgf@picture@serial@count=\count472
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen271
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen272
+\pgf@pt@y=\dimen273
+\pgf@pt@temp=\dimen274
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen275
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen276
+\pgf@sys@shading@range@num=\count473
+\pgf@shadingcount=\count474
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box70
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box71
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen277
+\pgf@nodesepend=\dimen278
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen279
+\pgffor@skip=\dimen280
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+)) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count475
+\pgfplotmarksize=\dimen281
+)
+\tikz@lastx=\dimen282
+\tikz@lasty=\dimen283
+\tikz@lastxsaved=\dimen284
+\tikz@lastysaved=\dimen285
+\tikz@lastmovetox=\dimen286
+\tikz@lastmovetoy=\dimen287
+\tikzleveldistance=\dimen288
+\tikzsiblingdistance=\dimen289
+\tikz@figbox=\box72
+\tikz@figbox@bg=\box73
+\tikz@tempbox=\box74
+\tikz@tempbox@bg=\box75
+\tikztreelevel=\count476
+\tikznumberofchildren=\count477
+\tikznumberofcurrentchild=\count478
+\tikz@fig@count=\count479
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count480
+\pgfmatrixcurrentcolumn=\count481
+\pgf@matrix@numberofcolumns=\count482
+)
+\tikz@expandcount=\count483
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen290
+\pgfarrowlength=\dimen291
+\pgfarrowwidth=\dimen292
+\pgfarrowlinewidth=\dimen293
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/textgreek\textgreek.sty
 Package: textgreek 2011/10/09 v0.7 Greek symbols in text
 Package textgreek Info: Loading the definitions for the Greek fontencoding. on input line 39.
@@ -1108,9 +1308,9 @@ Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/*
 )
 Package scrkbase Info: You've told me to extend the font selection of the
 (scrkbase)             element `sectioning' that is an alias of element
-(scrkbase)             `disposition' on input line 123.
-\c@savepage=\count463
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 146.
+(scrkbase)             `disposition' on input line 131.
+\c@savepage=\count484
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 154.
  (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
@@ -1125,14 +1325,14 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 205.
+(scrartcl)           before \begin{document} on input line 213.
  (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count464
+\BKM@id=\count485
 ))
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 205.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 213.
  (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (Projektarbeit.aux
@@ -1141,30 +1341,30 @@ Package babel Info: 'ngerman' activates 'german' shorthands.
 )
 \openout1 = `Projektarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 205.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 205.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 213.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 213.
  (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    ... okay on input line 213.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\ngerman.lbx
@@ -1187,28 +1387,28 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Projektarbeit.bbl' found.
  (Projektarbeit.bbl)
-Package biblatex Info: Reference section=0 on input line 205.
-Package biblatex Info: Reference segment=0 on input line 205.
+Package biblatex Info: Reference section=0 on input line 213.
+Package biblatex Info: Reference segment=0 on input line 213.
  (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count465
-\scratchdimen=\dimen182
-\scratchbox=\box63
-\nofMPsegments=\count466
-\nofMParguments=\count467
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count468
-\MPscratchDim=\dimen183
-\MPnumerator=\count469
-\makeMPintoPDFobject=\count470
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count486
+\scratchdimen=\dimen294
+\scratchbox=\box76
+\nofMPsegments=\count487
+\nofMParguments=\count488
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count489
+\MPscratchDim=\dimen295
+\MPnumerator=\count490
+\makeMPintoPDFobject=\count491
+\everyMPtoPDFconversion=\toks45
 ) (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 205.
+Package hyperref Info: Link coloring OFF on input line 213.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1243,11 +1443,11 @@ Package hyperref Info: Link coloring OFF on input line 205.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count471
-Package tocbasic Info: setting babel extension for `lol' on input line 205.
-\scr@dte@lstlisting@maxnumwidth=\skip95
+\c@lstlisting=\count492
+Package tocbasic Info: setting babel extension for `lol' on input line 213.
+\scr@dte@lstlisting@maxnumwidth=\skip97
 (content/0_0_1Deckblatt.tex
-<logos/logo_dhbw.png, id=3, 1284.8pt x 537.00626pt>
+<logos/logo_dhbw.png, id=6, 1284.8pt x 537.00626pt>
 File: logos/logo_dhbw.png Graphic file (type png)
 <use logos/logo_dhbw.png>
 Package pdftex.def Info: logos/logo_dhbw.png  used on input line 5.
@@ -1274,198 +1474,179 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 6.
-<logos/logo_rafi.png, id=5, 271.0125pt x 40.15pt>
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 9.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
  [1
 
-{C:/Users/h0109030/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./logos/logo_dhbw.png> <./logos/logo_rafi.png (PNG copy)>]) (content/0_0_2Erklaerung.tex
+{C:/Users/h0109030/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./logos/logo_dhbw.png>]) (content/0_0_2Erklaerung.tex
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1.
  (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
 File: logos/logo_dhbw.png Graphic file (type png)
 <use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 236.
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 244.
 (pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 236.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
  [1] (Projektarbeit.toc)
-\tf@toc=\write4
-\openout4 = `Projektarbeit.toc'.
+\tf@toc=\write5
+\openout5 = `Projektarbeit.toc'.
 
 File: logos/logo_dhbw.png Graphic file (type png)
 <use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 240.
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 248.
 (pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 240.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
  [2] (content/01_Einleitung.tex
-File: logos/logo_dhbw.png Graphic file (type png)
-<use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 20.
-(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 20.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.20 \subsection
-                {Zielsetzung} [1])
-File: logos/logo_dhbw.png Graphic file (type png)
-<use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 245.
-(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 245.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
- [2] (content/05_TechnischeLoesung.tex
-<images/UmsetzungIntelligenterFehlersupport.drawio.png, id=75, 1195.46625pt x 713.66624pt>
-File: images/UmsetzungIntelligenterFehlersupport.drawio.png Graphic file (type png)
-<use images/UmsetzungIntelligenterFehlersupport.drawio.png>
-Package pdftex.def Info: images/UmsetzungIntelligenterFehlersupport.drawio.png  used on input line 13.
-(pdftex.def)             Requested size: 455.24411pt x 271.77313pt.
-File: logos/logo_dhbw.png Graphic file (type png)
-<use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 22.
-(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 22.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
- [3
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.22 
-      <./images/UmsetzungIntelligenterFehlersupport.drawio.png>]
-<images/RINGBUFFER.drawio.png, id=83, 532.99126pt x 493.845pt>
-File: images/RINGBUFFER.drawio.png Graphic file (type png)
-<use images/RINGBUFFER.drawio.png>
-Package pdftex.def Info: images/RINGBUFFER.drawio.png  used on input line 26.
-(pdftex.def)             Requested size: 227.62206pt x 210.90239pt.
-File: logos/logo_dhbw.png Graphic file (type png)
-<use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 36.
-(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 36.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
- [4
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.36 
-      <./images/RINGBUFFER.drawio.png>]
-File: logos/logo_dhbw.png Graphic file (type png)
-<use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 58.
-(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 58.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
- [5])
-File: logos/logo_dhbw.png Graphic file (type png)
-<use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 247.
-(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 247.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
- [6] (content/07_VergleichAusgangszustand.tex
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 11.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7.
  (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-File: logos/logo_dhbw.png Graphic file (type png)
-<use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 38.
-(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 38.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
- [7{C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}]
-File: logos/logo_dhbw.png Graphic file (type png)
-<use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 69.
-(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 69.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
- [8]
-<content/Code_um_Diagramme_darzustellen/Figure_1.png, id=121, 722.7pt x 396.7623pt>
-File: content/Code_um_Diagramme_darzustellen/Figure_1.png Graphic file (type png)
-<use content/Code_um_Diagramme_darzustellen/Figure_1.png>
-Package pdftex.def Info: content/Code_um_Diagramme_darzustellen/Figure_1.png  used on input line 72.
-(pdftex.def)             Requested size: 455.24411pt x 249.93129pt.
-)
-File: logos/logo_dhbw.png Graphic file (type png)
-<use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 249.
-(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 249.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
- [9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.249     \newpage
-                   <./content/Code_um_Diagramme_darzustellen/Figure_1.png>] (content/09_UmsetzungUndRisiken.tex
-Overfull \hbox (38.52202pt too wide) in paragraph at lines 9--10
-\T1/lmr/m/n/12 mit his-to-ri-schen Still-stands-zei-ten, Über-prü-fung des Zeiter-spar-nis-ses (Ziel: ca. 10 Min./Störung)
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 17.
+ (C:\Users\h0109030\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+Overfull \hbox (95.88829pt too wide) in paragraph at lines 17--253
+\T1/lmr/m/n/12 Als Aus-gangs-punkt dient das be-reit-ge-stell-te Start-pro-jekt \T1/lmtt/m/n/12 TEA24_IndusBusSys_Task_Start_Project.zap21\T1/lmr/m/n/12 .
  []
 
-File: logos/logo_dhbw.png Graphic file (type png)
-<use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 25.
-(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 25.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
-[10])
-File: logos/logo_dhbw.png Graphic file (type png)
-<use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 251.
-(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 251.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
- [11] (content/099_FazitUndEntscheidungsvorlage.tex)
 File: logos/logo_dhbw.png Graphic file (type png)
 <use logos/logo_dhbw.png>
 Package pdftex.def Info: logos/logo_dhbw.png  used on input line 253.
 (pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 253.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
- [12] (content/102_NutzungKÃ¼nstlicherIntelligenzen.tex
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.253     \newpage
+                   [1{C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] (content/03_Systemaufbau.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 7.
+
+Overfull \hbox (0.62914pt too wide) in paragraph at lines 16--16
+[]|\T1/lmr/m/n/10.95 Temperatursensor|  
+ []
+
+<images/TopologieansichtTIA.png, id=61, 508.90125pt x 303.1325pt>
+File: images/TopologieansichtTIA.png Graphic file (type png)
+<use images/TopologieansichtTIA.png>
+Package pdftex.def Info: images/TopologieansichtTIA.png  used on input line 33.
+(pdftex.def)             Requested size: 332.46693pt x 198.0375pt.
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 37.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+[2
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.37 
+     ]
+<images/Laboraufbau.jpg, id=70, 2055.68pt x 1541.76pt>
+File: images/Laboraufbau.jpg Graphic file (type jpg)
+<use images/Laboraufbau.jpg>
+Package pdftex.def Info: images/Laboraufbau.jpg  used on input line 41.
+(pdftex.def)             Requested size: 386.96027pt x 290.2085pt.
+)
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 255.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+ [3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.255     \newpage
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.255     \newpage
+                   <./images/TopologieansichtTIA.png (PNG copy)> <./images/Laboraufbau.jpg>] (content/05_Programmkonzept.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 52.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 52.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 52.
+
+Overfull \hbox (6.97849pt too wide) in paragraph at lines 84--85
+ [][] 
+ []
+
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 88.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+[4{C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 94.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+ [5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.94 
+     ]
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 146.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+ [6]
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 155.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+ [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 L
+       Ã¤sst der Bediener den Taster los, wartet das Programm, bis der Motor...] (content/09_Bedienkonzept.tex
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 36.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+ [8
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.36 
+     ]))
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 257.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+ [9
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.257     \newpage
+                  ] (content/10_Bedienungsanleitung.tex)
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 259.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+ [10] (content/11_UmsetzungInTIA.tex)
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 261.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+ [11] (content/13_Test.tex)
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 263.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+ [12] (content/15_Fazit.tex)
+File: logos/logo_dhbw.png Graphic file (type png)
+<use logos/logo_dhbw.png>
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 265.
+(pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
+ [13] (content/102_NutzungKÃ¼nstlicherIntelligenzen.tex
 Underfull \hbox (badness 1939) in paragraph at lines 6--7
-[]\T1/lmr/bx/n/12 Arbeitsschritt /
+[]|\T1/lmr/bx/n/12 Arbeitsschritt /
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]\T1/lmr/m/n/12 ChatGPT/
+[]|\T1/lmr/m/n/12 ChatGPT/
  []
 
 
@@ -1480,31 +1661,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--10
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
-[]\T1/lmr/m/n/12 RAFI-GPT
+[]|\T1/lmr/m/n/12 RAFI-GPT
  []
 
 
-Overfull \hbox (24.9875pt too wide) in paragraph at lines 4--27
+Overfull \hbox (26.58748pt too wide) in paragraph at lines 4--27
 [][] 
  []
 
 )
 File: logos/logo_dhbw.png Graphic file (type png)
 <use logos/logo_dhbw.png>
-Package pdftex.def Info: logos/logo_dhbw.png  used on input line 278.
+Package pdftex.def Info: logos/logo_dhbw.png  used on input line 292.
 (pdftex.def)             Requested size: 85.08328pt x 35.56593pt.
-File: logos/logo_rafi.png Graphic file (type png)
-<use logos/logo_rafi.png>
-Package pdftex.def Info: logos/logo_rafi.png  used on input line 278.
-(pdftex.def)             Requested size: 124.83679pt x 18.49411pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.278     \newpage
+l.292     \newpage
                    [1]
 
-LaTeX Warning: Empty bibliography on input line 279.
+LaTeX Warning: Empty bibliography on input line 293.
 
 (Projektarbeit.aux)
  ***********
@@ -1516,17 +1693,17 @@ Package logreq Info: Writing requests to 'Projektarbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28471 strings out of 467867
- 545846 string characters out of 5416882
- 1542818 words of memory out of 5000000
- 56934 multiletter control sequences out of 15000+600000
- 691159 words of font info for 78 fonts, out of 8000000 for 9000
+ 39743 strings out of 467867
+ 796480 string characters out of 5416882
+ 1771516 words of memory out of 5000000
+ 67969 multiletter control sequences out of 15000+600000
+ 704830 words of font info for 88 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,24n,107p,11285b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Projektarbeit.pdf (16 pages, 384082 bytes).
+ 108i,24n,107p,11282b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/h0109030/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on Projektarbeit.pdf (17 pages, 882860 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
 
